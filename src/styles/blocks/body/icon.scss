@@ -19,6 +19,13 @@
       transform 0.3s ease,
       visibility 0.3s ease;
     margin: 0 20px;
+    width: 24px;
+    height: 24px;
+
+    @include on-tablet {
+      width: max-content;
+      height: inherit;
+    }
 
     font-weight: 700;
     font-size: 12px;
@@ -29,10 +36,10 @@
   }
 
   &__image {
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 24px;
     height: 24px;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     @include on-tablet {
       width: 32px;

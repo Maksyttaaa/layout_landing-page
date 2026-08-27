@@ -24,8 +24,8 @@
 
   &__body {
     margin: 0;
-    background-color: $body-bg;
     scroll-behavior: smooth;
+    background-color: $body-bg;
   }
 
   &:has(.page__menu:target) {

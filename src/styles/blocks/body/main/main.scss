@@ -1,20 +1,30 @@
 .main {
-  display: grid;
-  row-gap: 80px;
-  padding-block: 80px;
-  padding-inline: 20px;
+  position: relative;
+  background: $body-bg;
+  z-index: 1;
+
+  &__wrapper {
+    display: grid;
+    row-gap: 80px;
+    padding-block: 80px;
+    padding-inline: 20px;
+  }
 
   @include on-tablet {
-    padding-block: 120px;
-    padding-inline: 72px;
-    row-gap: 120px;
+    &__wrapper {
+      row-gap: 120px;
+      padding-block: 120px;
+      padding-inline: 72px;
+    }
   }
 
   @include on-desktop {
-    row-gap: 180px;
-    max-width: 1020px;
-    margin-inline: auto;
-    padding-block: 180px;
-    padding-inline: 120px;
+    &__wrapper {
+      row-gap: 180px;
+      max-width: 1020px;
+      margin-inline: auto;
+      padding-block: 180px;
+      padding-inline: 120px;
+    }
   }
 }

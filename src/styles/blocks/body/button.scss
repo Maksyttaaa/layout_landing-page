@@ -17,6 +17,11 @@
   display: block;
   margin: 0 auto;
   grid-column: 1 / -1;
+  cursor: pointer;
+
+  &--form {
+    width: 100%;
+  }
 
   &:hover {
     box-shadow: 1px 4px 16px 0 $button-hover-color;
