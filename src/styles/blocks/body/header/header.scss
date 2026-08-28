@@ -37,7 +37,7 @@
   }
 
   &__hero {
-    min-height: 320px;
+    min-height: 480px;
 
     background-image: url(/src/images/header.png);
     background-repeat: no-repeat;
@@ -47,7 +47,6 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 40px;
 
     @include on-tablet {
       min-height: 628px;

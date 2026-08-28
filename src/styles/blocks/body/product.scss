@@ -1,4 +1,7 @@
 .product {
+  transition: transform 0.3s;
+  cursor: pointer;
+
   &__photo {
     width: 100%;
     margin-top: 12px;
@@ -32,5 +35,10 @@
     line-height: 140%;
     letter-spacing: 0;
     color: #fff;
+  }
+
+  &:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
   }
 }
